@@ -150,7 +150,91 @@
 			</div>
 		</section>
 
+	<!-- gallery-->
 
+	<div class="container">
+		<section>
+			<div class="page-header" id="gallery">
+				<h2>Gallery <small>check out the gallery</small></h2>
+			</div>
+
+			<!-- Carousels require the use of an id (in this case id="myCarousel") for carousel controls to function properly.
+
+			The class="carousel" specifies that this <div> contains a carousel.
+
+			The .slide class adds a CSS transition and animation effect, which makes the items slide when showing a new item. Omit this class if you do not want this effect.
+
+			The data-ride="carousel" attribute tells Bootstrap to begin animating the carousel immediately when the page loads.
+			
+			The indicators are specified in an ordered list with class .carousel-indicators.
+
+			The .data-target class points to the id of the carousel.
+
+			The .data-slide-to class specifies which slide to go to, when clicking on the specific dot.
+
+			-->
+
+			<div class="carousel slide" id="screenshot-carousel" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#screenshot-carousel" data-slide-to="0" class="active"></li>
+					<li data-target="#screenshot-carousel" data-slide-to="1"></li>
+					<li data-target="#screenshot-carousel" data-slide-to="2"></li>
+					<li data-target="#screenshot-carousel" data-slide-to="3"></li>
+				</ol>
+
+				<!-- the images -->
+				<div class="carousel-inner">
+					<div class="item active">
+						<img src="img/highway.jpg" alt="highway">
+
+						<!-- allows caption-->
+						<div class="carousel-caption">
+							<h3>Highway</h3>
+							<p> This is a caption</p>
+						</div>
+					</div>
+
+					<div class="item">
+						<img src="img/river.jpg" alt="river">
+						<!-- allows caption-->
+						<div class="carousel-caption">
+							<h3>River</h3>
+							<p> This is a caption</p>
+						</div>
+					</div>
+
+					<div class="item">
+						<img src="img/street.jpg" alt="street">
+						<!-- allows caption-->
+						<div class="carousel-caption">
+							<h3>Street</h3>
+							<p> This is a caption</p>
+						</div>
+					</div>
+
+					<div class="item">
+						<img src="img/painting.jpg" alt="painting">
+						<!-- allows caption-->
+						<div class="carousel-caption">
+							<h3>Painting</h3>
+							<p> This is a caption</p>
+						</div>
+					</div>
+
+				</div> <!-- end of carousel inner-->
+
+				<a href="#screenshot-carousel" class="left carousel-control" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+				</a>
+
+				<a href="#screenshot-carousel" class="right carousel-control" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+				</a>
+
+			</div> <!-- end of carousel-->
+
+		</section>
+	</div>
 
 
 
